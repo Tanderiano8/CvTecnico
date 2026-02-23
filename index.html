@@ -1,32 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Bruno Tundis</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: #fcfcfc;
+        }
+        h1 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #3498db; 
+            padding-bottom: 10px; 
+            margin-bottom: 5px;
+        }
+        h2 { 
+            color: #2980b9; 
+            margin-top: 30px; 
+            margin-bottom: 15px;
+        }
+        .contact-info { 
+            margin-bottom: 30px; 
+            color: #555;
+            line-height: 1.8;
+        }
+        .contact-info a { 
+            color: #3498db; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .tech-list { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 10px; 
+            list-style-type: none; 
+            padding: 0; 
+        }
+        .tech-list li { 
+            background: #ecf0f1; 
+            color: #2c3e50;
+            padding: 8px 15px; 
+            border-radius: 5px; 
+            font-weight: 600; 
+            font-size: 0.9em;
+        }
+        .project { 
+            background: #fff;
+            margin-bottom: 20px; 
+            border-left: 4px solid #3498db; 
+            padding: 15px 20px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .project-title { 
+            font-weight: bold; 
+            font-size: 1.2em; 
+            color: #2c3e50;
+        }
+        .project-desc {
+            margin: 10px 0;
+        }
+        .project-link { 
+            font-size: 0.95em; 
+            color: #e67e22; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
     <header>
         <h1>Bruno Tundis</h1>
-        <p>Estudiante de la Tecnicatura en Programacion en UNAHUR</p>
+        <div class="contact-info">
+            📍 Caseros, Buenos Aires<br>
+            📱 Teléfono: <a href="tel:+5491135744299">+54 9 11 3574-4299</a><br>
+            ✉️ Email: <a href="mailto:brunotundis34@gmail.com">brunotundis34@gmail.com</a><br>
+            👔 LinkedIn: <a href=https://www.linkedin.com/in/bruno-tundis/ target="_blank">linkedin.com/in/brunotundis</a><br>
+            💻 GitHub: <a href="https://github.com/Tanderiano8" target="_blank">github.com/Tanderiano8</a>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Perfil</h2>
-        <p>Soy estudiante de tercer año con conocimientos en creacion de software, desarrollo web</p>
-        
-        </section>
-        <section>
-            <h2>Tecnologias</h2>
-        </section>
+    <section>
+        <h2>Perfil</h2>
+        <p>Estudiante de la Tecnicatura Universitaria en Programación de la Universidad Nacional de Hurlingham (UNAHUR). Apasionado por el desarrollo de software, la creación de soluciones digitales y el aprendizaje continuo de nuevas tecnologías.</p>
+    </section>
 
-        <section>
-            <h2>Contacto</h2>
-        </section>
-    </main>
-    <footer></footer>
+    <section>
+        <h2>Tecnologías</h2>
+        <ul class="tech-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Proyectos</h2>
+        
+        <div class="project">
+            <div class="project-title">Taurus Consultora</div>
+            <p class="project-desc">Desarrollo integral de la página web corporativa (Single Page Application). Implementación de diseño interactivo estructurado en múltiples secciones (Nosotros, Servicios, Proyectos, Contacto). Desarrollo de funcionalidades como tarjetas de proyectos clickeables, contadores animados de estadísticas y un carrusel bidireccional de clientes. Integración fluida de datos de contacto y redes sociales.</p>
+            <a href="#" class="project-link" target="_blank">Ver repositorio / Web 🔗</a>
+        </div>
+    </section>
 </body>
 </html>
