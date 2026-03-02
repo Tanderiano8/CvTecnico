@@ -99,3 +99,48 @@ footer {
     color: #777;
     font-size: 0.9em;
 }
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+        line-height: 1.6;
+    }
+
+    .contact-info a {
+        display: inline-block;
+        margin-bottom: 5px;
+        word-break: break-all; /* Evita que los links largos rompan la pantalla */
+    }
+
+    .tech-list {
+        gap: 8px;
+    }
+
+    .tech-list li {
+        padding: 6px 12px;
+        font-size: 0.85em;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .project-link {
+        display: block; /* Pone los links uno arriba del otro en celular */
+        margin-top: 10px;
+    }
+}
